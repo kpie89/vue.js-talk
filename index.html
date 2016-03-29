@@ -26,7 +26,7 @@
         <h2>Things left to do: {{tasks.length}}</h2>
         <ol class="list-group">
           <li class="list-group-item" v-repeat="task in tasks | toBeDone">
-          <span v-on=dblclick: "updateTask(task)">{{ task.body }}</span>
+          <span v-on="dblclick: updateTask(task)">{{ task.body }}</span>
             <button class="done" v-on="click: taskDone(task)">&#10003</button>
             <button v-on="click: removeTask(task)">&#x2716</button>
           </li>
