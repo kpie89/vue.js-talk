@@ -17,7 +17,7 @@ By the end of this, developers should be able to:
 2.  Install dependencies with `npm install`.
 
 
-## Leading Topic Heading
+## What the heck is Vue.js?
 
 From (https://vuejs.org/guide/overview.html)
 
