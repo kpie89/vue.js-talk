@@ -9,7 +9,6 @@ By the end of this, developers should be able to:
 -   Understand the core concepts of Vue.js
 -   Set up a Vue.js app
 -   Create a To-Do list app using Vue.js
--
 
 ## Preparation
 
