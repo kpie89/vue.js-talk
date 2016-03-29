@@ -1,0 +1,15 @@
+li button {
+  float: right;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: red;
+}
+
+.done {
+  float: right;
+  padding-left: 10px;
+  border: 0;
+  background: none;
+  color: green;
+}

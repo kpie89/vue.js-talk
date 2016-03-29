@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue.js-talk</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>vue.js-lesson</title>
+      </head>
+      <body>
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Listr</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+      <div id="demo" class="container">
+        <h1>Listr</h1>
+        <h2>Things left to do: {{tasks.length}}</h2>
+        <ol class="list-group">
+          <li class="list-group-item" v-repeat="task in tasks | toBeDone">
+          <span v-on=dblclick: "updateTask(task)">{{ task.body }}</span>
+            <button class="done" v-on="click: taskDone(task)">&#10003</button>
+            <button v-on="click: removeTask(task)">&#x2716</button>
+          </li>
+
+        </ol>
+
+        <form v-on="submit: addTask">
+          <div class="form-group">
+          <input class="form-control"
+                 placeholder="I need to...."
+                 v-model="newTask"
+                 v-el="editTask"></input>
+        </div>
+
+
+        <button class="btn btn-primary">Add Task!</button>
+        </form>
+        <pre> {{ $data | json }} </pre>
+        <h1>Finished Tasks</h1>
+
+        <ol class="list-group">
+
+          <li class="list-group-item" v-repeat="task in tasks | completedTask">
+          {{ task.body }}
+        </li>
+        </ol>
+      </div>
+    </body>
+    </html>
+
+        <app></app>
+        <script src="dist/build.js"></script>
+      </body>
+    </html>
+
+    <app></app>
+    <script src="dist/build.js"></script>
+  </body>
+</html>
