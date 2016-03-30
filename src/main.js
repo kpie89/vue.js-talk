@@ -75,7 +75,7 @@ new Vue({
 
       this.newTask = task.body;
 
-      this.$$.editTask.focus();
+      this.$el.editTask.focus();
     },
 
     taskDone: function(task) {
