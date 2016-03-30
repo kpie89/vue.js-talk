@@ -15,6 +15,7 @@ By the end of this, developers should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 2.  Install dependencies with `npm install`.
+3.  Host locally by running ```npm run dev```
 
 
 ## What the heck is Vue.js?
