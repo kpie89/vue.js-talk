@@ -34,7 +34,7 @@ For example:
 Let's make a new div in our HTML file.
 
 ```
-<div class="example">
+<div id="example">
   {{ greeting }}
 </div>
 ```
@@ -43,7 +43,7 @@ Then we can create a new instance of Vue in another JS file:
 
 ```
 new Vue ({
-  el: "example",
+  el: "#example",
   data: {
     greeting: "Hello World"
    }
