@@ -21,6 +21,20 @@ new Vue({
     newTask: ''
   },
 
+  computed: {
+    completions: function() {
+      return this.tasks.filter(function(task) {
+        return task.completed;
+      });
+    },
+
+     todos: function() {
+       return this.tasks.filter(function(task) {
+         return ! task.completed;
+       });
+     }
+   },
+
   filters: {
     toBeDone: function(tasks) {
       return tasks.filter(function(task) {
