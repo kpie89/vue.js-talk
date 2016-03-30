@@ -142,7 +142,7 @@ computed: {
 Then in our HTML file instead of simply rendering the length of all of our data, we need to return:
 
 ```
-{{{ completions.length }}}
+{{ completions.length }}
 ```
 
 There we go, a basic look at using computed properties.
