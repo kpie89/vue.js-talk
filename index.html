@@ -23,7 +23,7 @@
     <body>
       <div id="demo" class="container">
         <h1>Listr</h1>
-        <h2>Things left to do: {{tasks.length}}</h2>
+        <h2>Things left to do: {{todos.length}}</h2>
         <ol class="list-group">
           <li class="list-group-item" v-repeat="task in tasks | toBeDone">
           <span v-on="dblclick: updateTask(task)">{{ task.body }}</span>
@@ -45,7 +45,7 @@
         <button class="btn btn-primary">Add Task!</button>
         </form>
         <pre> {{ $data | json }} </pre>
-        <h1>Finished Tasks</h1>
+        <h1>Finished Tasks ({{ completions.length }})</h1>
 
         <ol class="list-group">
 
