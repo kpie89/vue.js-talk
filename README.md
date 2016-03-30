@@ -52,7 +52,7 @@ new Vue ({
 
   Notice that in the new instance of Vue we have created, we attached it to the 'example' div using the 'el' binding. Now, everything within the 'example' div will be in the scope of the new Vue instance.
 
-  ## Yummy Built-Ins
+## Yummy Built-Ins
 
   We bind data very easily using Vue.js. I'll use an example from my Listr app.
 
@@ -145,7 +145,7 @@ Then in our HTML file instead of simply rendering the length of all of our data,
 {{{ completions.length }}}
 ```
 
-There we go, a basic look at using computed properties. 
+There we go, a basic look at using computed properties.
 
 ## Conclusion
 
