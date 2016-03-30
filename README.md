@@ -126,6 +126,27 @@ filters: {
 
 Vue knows 'filter' and can pass it a function that returns only the tasks that do not have completed as true. Simple as that.
 
+## Computed Properties
+
+So we want to see how many tasks we still have to do and how many we have completed. That's easy...we can use a computed property. Just like with filters and methods on our view instance. We add computed properties right in our Vue instance:
+
+```
+computed: {
+  completions: function() {
+    return this.tasks.filter(function(task) {
+      return task.completed;
+    });
+  },
+```
+
+Then in our HTML file instead of simply rendering the length of all of our data, we need to return:
+
+```
+{{{ completions.length }}}
+```
+
+There we go, a basic look at using computed properties. 
+
 ## Conclusion
 
 Vue.js is a nice, simple library that can either be used in conjunction with other frameworks but also has the capability to be used to completely build a scaled SPA.
