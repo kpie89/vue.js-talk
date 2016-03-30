@@ -54,7 +54,7 @@ new Vue ({
 
 ## Yummy Built-Ins
 
-  We bind data very easily using Vue.js. I'll use an example from my Listr app.
+  We bind data very easily using Vue.js. I'll use an example from my Taskr app.
 
 ```
 new Vue({
